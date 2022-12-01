@@ -21,7 +21,7 @@ python dl.py --day=<day> --year=<year>
 
 ## How to automatically download input
 
-Note that it's not encouraged to automatically download input for each puzzle. If you have to do it, do it only ONCE for each puzzle! This is to avoid doxxing the AOC website, or worse, getting ourselved banned.
+Note that it's not encouraged to automatically download the puzzle's input. If you have to do it, do it only ONCE for each puzzle! This is to avoid doxxing the AOC website, or worse, getting ourselved banned.
 
 First, install `python-dotenv` by running `pip install -r requirements.txt` or `pip install python-dotenv`.
 
