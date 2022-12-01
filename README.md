@@ -21,11 +21,11 @@ python dl.py --day=<day> --year=<year>
 
 ## How to automatically download input
 
-Note that it's not encouraged to automatically download input for each puzzle. If you have to do it, do it only ONCE for each puzzle!
+Note that it's not encouraged to automatically download input for each puzzle. If you have to do it, do it only ONCE for each puzzle! This is to avoid doxxing the AOC website, or worse, getting ourselved banned.
 
 First, install `python-dotenv` by running `pip install -r requirements.txt` or `pip install python-dotenv`.
 
-You will need the session ID of a logged in session for [https://adventofcode.com/](https://adventofcode.com/). Once logged in, find the session ID here:
+You will need the session ID of a logged in session for [https://adventofcode.com/](https://adventofcode.com/). This session ID is basically the cookie for the website, and should exist for about a month before expiring. Once logged in, find the session ID here:
 
 ![AOC Session ID](./.assets/aoc_session.png)
 
