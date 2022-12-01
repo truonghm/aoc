@@ -1,5 +1,7 @@
 # Advent of Code Solutions
 
+## Set up
+
 1. Run solution:
 
 ```
@@ -16,3 +18,21 @@
 ```
 python dl.py --day=<day> --year=<year>
 ```
+
+## How to automatically download input
+
+Note that it's not encouraged to automatically download input for each puzzle. If you have to do it, do it only ONCE for each puzzle!
+
+First, install `python-dotenv` by running `pip install -r requirements.txt` or `pip install python-dotenv`.
+
+You will need the session ID of a logged in session for [https://adventofcode.com/](https://adventofcode.com/). Once logged in, find the session ID here:
+
+![AOC Session ID](./.assets/aoc_session.png)
+
+Put that ID into an .env file like this:
+
+```
+SESSION_ID="some very long string"
+```
+
+Then run `python dl.py --day=<day> --year=<year>` as instructed above.
