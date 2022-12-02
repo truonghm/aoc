@@ -5,7 +5,7 @@
 1. Run solution:
 
 ```
-# python solve.py --day=<day> --year=<year>
+python solve.py --day=<day> --year=<year>
 ```
 
 `<day>` can be formatted as __DD__ or __D__. `<year>` is formatted as __YYYY__. They are also not compulsory, and if they are not provided, the current day and year will be used.
@@ -21,7 +21,7 @@ python dl.py --day=<day> --year=<year>
 
 ## How to automatically download input
 
-Note that it's not encouraged to automatically download the puzzle's input. If you have to do it, do it only ONCE for each puzzle! This is to avoid doxxing the AOC website, or worse, getting ourselved banned.
+Note that it's not encouraged to automatically download the puzzle's input. If you have to do it, do it only ONCE for each puzzle! This is to avoid doxxing the AOC website, or worse, getting ourselves banned.
 
 First, install `python-dotenv` by running `pip install -r requirements.txt` or `pip install python-dotenv`.
 

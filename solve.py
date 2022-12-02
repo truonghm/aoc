@@ -1,6 +1,6 @@
 from utils import read_input, get_args
 
-def solve(day:int, year:int):
+def solve(day, year):
 	data = read_input(day=day, year=year)
 	solutions = __import__(name = f"solutions.aoc{year}.s{year}{day}", fromlist=[None])
 	
