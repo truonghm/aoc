@@ -7,13 +7,13 @@ import pandas as pd
 import re
 from io import StringIO
 
-def _separate_instr(s):
+def __separate_instr(s):
 	move_no = int(re.findall("(?<=move\s)(.*?)(?=\sfrom)", s)[0])
 	from_no = int(re.findall("(?<=from\s)(.*?)(?=\sto)", s)[0])
 	to_no = int(re.findall("(?<=to\s)(.*?)$", s)[0])
 	return move_no,from_no, to_no
 
-def _transform_stacks(s):
+def __transform_stacks(s):
 	s = re.sub(r"\s\d+\s\s", "", s)
 	s = re.sub(r"\s\d+\s", "", s)
 	s = s.replace("] [", ",")
@@ -29,9 +29,9 @@ def _transform_stacks(s):
 def solve_part1(data):
 	
 	stacks, instr = data.split("\n\n")
-	instr = [_separate_instr(i) for i in instr.split("\n") if i != '']
+	instr = [__separate_instr(i) for i in instr.split("\n") if i != '']
 
-	stacks = _transform_stacks(stacks)
+	stacks = __transform_stacks(stacks)
 	stacks = "" + ",".join([str(i+1) for i in range(9)]) + "\n" + stacks
 
 	stacks_list = pd.read_csv(
@@ -50,9 +50,9 @@ def solve_part1(data):
 
 def solve_part2(data):
 	stacks, instr = data.split("\n\n")
-	instr = [_separate_instr(i) for i in instr.split("\n") if i != '']
+	instr = [__separate_instr(i) for i in instr.split("\n") if i != '']
 
-	stacks = _transform_stacks(stacks)
+	stacks = __transform_stacks(stacks)
 	stacks = "" + ",".join([str(i+1) for i in range(9)]) + "\n" + stacks
 
 	stacks_list = pd.read_csv(
